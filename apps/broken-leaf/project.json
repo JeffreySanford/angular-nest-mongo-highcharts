@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/broken-leaf",
         "index": "apps/broken-leaf/src/index.html",
@@ -17,8 +19,15 @@
           "apps/broken-leaf/src/favicon.ico",
           "apps/broken-leaf/src/assets"
         ],
-        "styles": ["apps/broken-leaf/src/styles.scss"],
-        "scripts": []
+        "styles": [
+          "@angular/material/prebuilt-themes/indigo-pink.css",
+          "apps/broken-leaf/src/styles.scss",
+          "node_modules/ngx-toastr/toastr.css"
+        ],
+        "scripts": [],
+        "allowedCommonJsDependencies": [
+          "highcharts"
+        ]
       },
       "configurations": {
         "production": {
@@ -85,7 +94,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/broken-leaf"],
+      "outputs": [
+        "coverage/apps/broken-leaf"
+      ],
       "options": {
         "jestConfig": "apps/broken-leaf/jest.config.ts",
         "passWithNoTests": true

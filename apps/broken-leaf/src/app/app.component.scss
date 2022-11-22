@@ -1,0 +1,17 @@
+.landing-page {}
+
+h1 {
+  text-align: center;
+  margin: 1em 30%;
+}
+
+.mat-brand-nx {
+  position: fixed;
+  bottom: 1em;
+  right: 1.5em;
+  width: 3em;
+
+  .nx-logo {
+    width: 2em;
+  }
+}

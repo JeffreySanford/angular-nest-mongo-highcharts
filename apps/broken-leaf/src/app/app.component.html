@@ -1,9 +1,13 @@
-<div style="text-align: center">
-  <h1>Welcome to broken-leaf!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-    alt="Nx - Smart, Fast and Extensible Build System"
-  />
-</div>
-<div>Message: {{ hello$ | async | json }}</div>
+<broken-leaf-spinner *ngIf="loading else template"></broken-leaf-spinner>
+
+<ng-template #template class="landing-page">
+  <h1>Broken Leaf Backend</h1>
+
+  <broken-leaf-departments></broken-leaf-departments>
+  <button mat-button-raised class="mat-brand-nx">
+    <img class="nx-logo" src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
+      alt="Nx - Smart, Fast and Extensible Build System" />
+  </button>
+
+  <broken-leaf-toaster></broken-leaf-toaster>
+</ng-template>

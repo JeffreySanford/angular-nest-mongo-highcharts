@@ -1,0 +1,45 @@
+.mat-brand-nx {
+  width: 25%;
+}
+
+.toaster {
+  padding: 10px;
+  margin: 0px;
+  background-color: red;
+  border-radius: 100px;
+  cursor: pointer;
+  border: 0px;
+}
+
+.chart-display {
+  width: 95%;
+  height: 400px;
+  display: block;
+  margin: 1em auto;
+}
+
+.add-department {
+  width: 30%;
+  font-size: 0.25em;
+  position: absolute;
+  right: 5.5em;
+
+  .department {
+    margin: 1em 0 0 1.25em;
+    width: 80%;
+  }
+
+  .add-row {
+    display: flex;
+    justify-content: space-around;
+
+    .cost {
+      max-width: 8em;
+    }
+
+    .add-button {
+      height: 2.5em;
+      justify-self: flex-end;
+    }
+  }
+}
